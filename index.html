@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>App 1 by Kamal Sir</title>
+<style>
+body{background-color:lightgreen;}
+*{font-size:60px;}
+</style>
+</head>
+<body>
+<center>
+<h1>WELCOME APP</h1>
+<h2 id="msg"/>
+<script>
+let msg=document.getElementById("msg")
+let d=new Date();
+let hr=d.getHours();
+if(hr<12)
+msg.innerHTML="GOOD MORNING";
+else if(hr<16)
+msg.innerHTML="GOOD AFTERNOON";
+else
+msg.innerHTML="GOOD EVENING";
+</script>
+</center>
+</body>
+</html>
